@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喃娘云</title>
+    
+        <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+    
+
+<body>
+    <header>
+        <h1>喃娘云免费VPS</h1>
+        <p>这里是您寻找最佳免费服务器配置的地方。</p>
+         <button style="
+                margin-left: 20px; 
+                padding: 10px 20px; 
+                cursor: pointer; 
+                background-color: #ff69b4; 
+                color: white; 
+                border: none; 
+                border-radius: 15px; 
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                font-size: 16px;"
+                onclick="window.location.href='z.html';">
+                注册
+            </button>
+            <button style="
+                margin-left: 10px; 
+                padding: 10px 20px; 
+                cursor: pointer; 
+                background-color: #ff69b4; 
+                color: white; 
+                border: none; 
+                border-radius: 15px; 
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                font-size: 16px;"
+                onclick="window.location.href='d.html';">
+                登录
+            </button>
+        </p>
+    </header>
+    
+    <main>
+        <section id="services">
+            <h2>服务器配置与价格</h2>
+            <div class="server-configs">
+                <div class="server-config">
+                    <img src="shx1.png" alt="配置1">
+                    <h3>香港 最低配置-39台</h3>
+                    <p>CPU: 1核 | RAM: 512MB | 存储: 10GB SSD | 100mbps 无限</p>
+                    <button onclick="showModal()">已售罄</button>
+                </div>
+                <div class="server-config">
+                    <img src="shx1.png" alt="配置1">
+                    <h3>新加坡 基础配置-8台</h3>
+                    <p>CPU: 2核 | RAM: 2GB | 存储: 30GB SSD | 50mbps 500GB/月</p>
+                    <button onclick="showModal()">已售罄</button>
+                </div>
+                <div class="server-config">
+                    <img src="shx1.png" alt="配置2">
+                    <h3>新加坡 标准配置-1台</h3>
+                    <p>CPU: 4核 | RAM: 4GB | 存储: 100GB SSD | 50mbps 500GB/月</p>
+                    <button onclick="showModal()">已售罄</button>
+                </div>
+                <div class="server-config">
+                    <img src="shx1.png" alt="配置3">
+                    <h3>高级配置-暂无厂商提供</h3>
+                    <p>CPU: 8核 | RAM: 8GB | 存储: 200GB SSD</p>
+                    <button onclick="showModal()">已售罄</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 喃娘. 版权所有.</p>
+        <p>freevps.govs.us.kg</p>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>所有vps 均已售罄，是否购买免费虚拟主机</p>
+            <button onclick="window.location.href='http://freehost.govs.us.kg'">确定</button>
+            <button onclick="closeModal()">取消</button>
+        </div>
+    </div>
+    
+    <script>
+        function showModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('myModal')) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
